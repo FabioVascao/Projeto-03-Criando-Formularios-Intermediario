@@ -19,14 +19,18 @@
     <fieldset>
       <legend>Informações Pessoais</legend>
       <div class="separador"></div>
-      <div class="linha1">
-        <label for="name">Nome</label>
-        <input type="text" id="name"/>
-        <label for="lastname">Sobrenome</label>
-        <input type="text" id="lastname"/>
+      <div class="col-1">
+        <div class="item">
+          <label for="name">Nome</label>
+          <input type="text" id="name"  required/>
+        </div>
+        <div class="item">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" id="lastname"/>
+        </div>
       </div>
       <label for="email">E-mail <span>(Digite um email válido)</span></label>
-      <input type="email" id="email"/>
+      <input type="email" id="email"  required/>
       <label for="password">Senha <span>(Mínimo de 6 caracteres)</span></label>
       <input type="password" id="password"/>
     </fieldset>
@@ -40,23 +44,39 @@
       <legend>Seus Horários Disponíveis</legend>
       <div class="separador"></div>
       <h2>Primeira Mentoria</h2>
-      <label for="mentoria1">Data</label>
-      <input type="date" name="mentoria1" id="mentoria1">
-      <label for="start">Das</label>
-      <input type="time" name="start" id="start">
-      <label for="end">Até</label>
-      <input type="time" name="end" id="end">
+      <div class="col-2">
+        <div class="item">
+          <label for="mentoria1">Data<span>(DD/MM/AAAA)</span></label>
+          <input class="teste" type="date" id="mentoria1">
+        </div>
+        <div class="item">
+          <label for="start">Das</label>
+          <input class="teste" type="time" id="start">
+        </div>
+        <div class="item">
+          <label for="end">Até</label>
+          <input class="teste" type="time" id="end">
+        </div>
+      </div>
       <h2>Segunda Mentoria</h2>
-      <label for="mentoria2">Data</label>
-      <input type="date" name="mentoria2" id="mentoria2">
-      <label for="start">Das</label>
-      <input type="time" name="start" id="start">
-      <label for="end">Até</label>
-      <input type="time" name="end" id="end">
+      <div class="col-3">
+        <div class="item">
+         <label for="mentoria2">Data<span>(DD/MM/AAAA)</span></label>
+          <input class="teste" type="date" id="mentoria2">
+        </div>
+        <div class="item">
+          <label for="start">Das</label>
+          <input class="teste" type="time" id="start">
+        </div>
+        <div class="item">
+          <label for="end">Até</label>
+          <input class="teste" type="time" id="end">
+        </div>
+      </div>
     </fieldset>
   </div>
   <footer>
-    <input type="submit" value="Salvar">
+    <input class="button" type="submit" value="Salvar">
   </footer>
   </form>
 </body>

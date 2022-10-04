@@ -81,18 +81,21 @@ label span {
   color: #C1BCCC;
   margin-left: 5px;
 }
-input {
-  width: 100%;
-  height: 56px;
-  background: #FAFAFC;
-  border: 1px solid #E6E6F0;
-  border-radius: 8px;
+label span:hover {
+  color: #5e5b63;
 }
-textarea {
+input, textarea {
   width: 100%;
   background: #FAFAFC;
   border: 1px solid #E6E6F0;
   border-radius: 8px;
+  padding: 10px;
+}
+input {
+  height: 56px;
+}
+input:focus {
+  outline: 2px solid black;
 }
 h2 {
   font-family: 'Staatliches', cursive;
@@ -100,6 +103,38 @@ h2 {
   line-height: 34px;
   color: #535971;
   margin-top: 30px;
+}
+.col-1, .col-2, .col-3 {
+  display: flex;
+  gap: 20px;
+}
+.col-1 > div:nth-child(1) {
+  width: 50%;
+}
+.col-1 > div:nth-child(2) {
+  width: 50%;
+}
+.col-2 > div:nth-child(1) {
+  width: 50%;
+}
+.col-2 > div:nth-child(2) {
+  width: 25%;
+}
+.col-2 > div:nth-child(3) {
+  width: 25%;
+}
+.col-3 > div:nth-child(1) {
+  width: 50%;
+}
+.col-3 > div:nth-child(2) {
+  width: 25%;
+}
+.col-3 > div:nth-child(3) {
+  width: 25%;
+}
+.item {
+  display: flex;
+  flex-direction: column;
 }
 footer {
   display: flex;
@@ -125,4 +160,10 @@ footer input {
   line-height: 26px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+footer .button:hover {
+  background: #963045;
+}
+input:invalid {
+  border: 1px solid #ff1010;
 }
